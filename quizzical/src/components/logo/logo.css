@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 6%;
+}
+.logo .title {
+  color: rgb(12, 20, 68);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.logo .logoImg {
+  font-size: 2.5rem;
+  color: rgb(184, 35, 35);
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    margin: 0 7%;
+  }
+  .logo .title {
+    color: rgb(12, 20, 68);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .logo .logoImg {
+    font-size: 2.5rem;
+  }
+}
+.logo.darkMood .title {
+  color: rgb(133, 206, 169);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.logo.darkMood .logoImg {
+  font-size: 2.5rem;
+  color: rgb(133, 206, 169);
+}/*# sourceMappingURL=logo.css.map */

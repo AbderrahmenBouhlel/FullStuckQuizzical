@@ -1,0 +1,8 @@
+.logoutCont{
+    &::after{
+        content: "logOut";
+    }
+    &:hover::after{
+        display: block;
+    }
+}

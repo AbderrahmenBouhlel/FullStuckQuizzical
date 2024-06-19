@@ -1,0 +1,725 @@
+.homePage{
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    .HomeNav{
+        height: 90px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        padding-left: 6rem;
+        padding-top: 2rem;
+        .homeLogo{
+            margin: 0 6%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .logoImg{
+                font-size: 6rem;
+                color: rgb(140, 212, 253);
+            }
+            .title{
+                font-size: 2.5rem;
+                color: white;
+                text-shadow: rgb(230, 92, 235) 1px 0 10px;
+                font-weight: 600;
+            }
+
+        }
+        .options{
+            display: flex;
+            gap: 2rem;
+            margin-left: 3rem;
+            .option{
+                a{
+                    text-decoration: none;
+                    color: rgb(140, 212, 253);
+                    font-size: 1.2rem;
+                    &:hover{
+                        text-shadow: rgb(161, 182, 202) 1px 0 8px;
+                    }
+                }
+               
+
+            }
+
+        }
+    }
+    .section{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header{
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        height: 95vh;
+        padding-bottom: 50rem;
+        .img{
+            overflow: hidden;
+            position: absolute;
+            left: 50%;
+            top: 44%;
+            transform: translate(-50%,-50%) rotate(-3deg) ;
+            width: 108%;
+            height: 550px;
+            filter: brightness(.5);
+
+        }
+        .text{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-shadow: rgb(153, 165, 219) 1px 0 10px;
+            .title{
+                font-size: 4.5rem;
+                color: rgb(92, 195, 255);
+                font-weight: 700;
+                text-wrap: nowrap;
+            }
+            .def{
+                color: white;
+                font-weight: 500;
+            }
+        }
+        .ctPlay{
+            padding: .5rem 1rem;
+            margin-top: 3rem ;
+            position: absolute;
+            left: 50%;
+            top: 110%;
+            transform: translateX(-50%);
+            font-size: 1rem;
+            border-radius: 10px;
+            border:1px solid  rgb(3, 161, 253);
+            color:  rgb(3, 161, 253);
+            background-color: transparent;
+     
+            cursor: pointer;
+
+            transition: all .4s ease-in-out;
+            &:hover{
+                
+                background-color: rgb(3, 161, 253);
+                color: white;
+             
+            }
+            &:active{
+                transform: translateX(-50%) scale(1.05);
+            }
+        }
+    }
+    .gameInfo{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        flex-direction: column;
+        .pageTitle{
+            color: white;
+            text-align: left;
+            width: 70%;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: #3586ff 1px 1px 10px;
+        }
+    
+        
+        .info{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            color: azure;
+            text-align: left;
+           margin-bottom: 2rem;
+            .title{
+                font-size: 2.5rem;
+                color: rgb(140, 212, 253);
+                position: relative;
+                font-weight: 700;
+                margin-bottom: 2rem;
+                padding-bottom: 1rem;
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 5px;
+                    background-color: rgb(140, 212, 253);
+                    width: 300px;
+                    top: 100%;
+                    
+
+                }
+
+            }
+           
+
+        }
+
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        background-color: #3586ff;
+        height: fit-content;
+        max-height: 200px;
+        padding: 2rem 3rem;
+        .sicial_icon ,.menu{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+           
+        }
+        .sicial_icon li{
+            list-style: none;
+            font-size: 2rem;
+            color: white;
+            margin:  0 1rem;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+            &:hover{
+                transform: translateY(-10px);
+            }
+        }
+        .menu li{
+            list-style: none;
+            opacity: .75;
+            font-size: 1.5rem;
+            color: white;
+            margin: 0 .9rem;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            &:hover{
+                opacity: 1;
+            }
+
+        }
+
+        .waves{
+           
+            .wave{
+                position: absolute;
+                top: -100px;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                background: url('../../../assets/wave.png'); 
+                background-size: 1000px 100px;
+            
+            }
+           
+
+        }
+    }
+
+    .contactUs{
+        
+        display: flex;
+        align-items: center;
+        margin-top: -6rem;
+        gap: 5rem;
+        padding: 0 10rem;
+        .pageTitle{
+            color: white;
+            text-shadow: #03a1fd 1px 1px 10px;
+            font-size: 2.3rem;
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            align-items: first baseline;
+            overflow: hidden;
+            flex: 2;
+            
+            .desTitle{
+                text-align: left;
+                font-size: 2.2rem;
+                color: white;
+                position: relative;
+                margin: 2rem 0;
+               
+                &::before{
+                    position: absolute;
+                    content: "";
+                    width: 50%;
+                    height: 4px;
+                    top: 110%;
+                    background: linear-gradient(90deg, rgb(3, 161, 253) 50%, gray 50%);
+                }
+            }
+            p{
+                text-align: left;
+                color: rgba(175, 175, 175, 0.6);
+            }
+            .coords{
+                margin: 2rem 0;
+                display: flex;
+                flex-direction: column;
+                gap: 1.3rem;
+                .coord{
+                    display: flex;
+                    gap: 1.2rem;
+                    align-items: center;
+                    justify-content: left;
+                    .iconContainer{
+                        border-radius: 50%;
+                        border: 2px solid rgb(3, 161, 253);
+                        color: #ffff;
+                        padding: .4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        .icon{
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        align-items:first baseline;
+                        .title{
+                            color: white;
+                        }
+                        p{
+                            color: rgba(175, 175, 175, 0.6);
+                        }
+                    }
+                }
+            }
+        }
+        .form{
+            flex: 3;
+            display: flex;
+            flex-wrap: wrap;
+           
+            column-gap: 3%;
+            .inputGroupe{
+                margin: 1rem 0 ;
+                position: relative;
+                input , textarea{
+                    outline: none;
+                    position: relative;
+                    border: none;
+                    border-bottom: 2px solid gray;
+                    width: 100%;
+                    transition: all .4s ease-in-out;
+                    background-color: transparent;
+                    color: white;
+                    padding: 5px;
+                   
+                    &:focus + label{
+                        transform: translateY(-23px);
+                    }
+                }
+                textarea{
+                    resize: none;
+                    height: 210px;
+                } 
+                label{
+                    position: absolute;
+                    color: white;
+                    left: 0;
+                    top: 8px;
+                    font-size: .8rem;
+                    transition: all .3s ease-in-out;
+                    color: rgba(167, 167, 167, 0.7);
+                }
+            }
+            .Half_Width{
+                flex-basis: 48%;
+            }
+            .Full_Width{
+                flex-basis: 100%;
+            }
+            
+            .sendBtn{
+                padding: .6rem;
+                border-radius: 20px;
+                background-color: #03a1fd;
+                align-self: self-start;
+                margin: 1rem 0;
+                color: white;
+                border: 1px solid transparent;
+                cursor: pointer;
+                transition: .4s all ease-in-out;
+                &:hover{
+                    background-color: transparent;
+                    color: #03a1fd;
+                    border-color: #03a1fd;
+                }
+                &:active{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@keyframes animatewave {
+    0%{
+        background-position-x: 1000px;
+    }
+    1000%{
+        background-position-x: 0;
+    }
+    
+}
+@keyframes animatewave_2{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:1300px) {
+    .homePage{
+        .HomeNav{
+            height: 85px;
+            padding-left: 5rem;
+            padding-top: 1.8rem;
+            .homeLogo{
+                margin: 0 2%;
+                .logoImg{
+                    font-size: 5rem;
+                }
+                .title{
+                    font-size: 2rem;
+                }
+    
+            }
+            .options{
+                gap: 1.8rem;
+                .option{
+                    a{  
+                        font-size: 1rem;
+                    }
+    
+                }
+    
+            }
+        }
+        .section{
+            width: 100%;
+            height: 100vh;
+        }
+    
+        .header{
+            position: relative;
+            height: 95vh;
+            padding-bottom: 50rem;
+            .img{
+                transform: translate(-50%,-50%) rotate(0deg) ;
+            }
+            .text{
+                .title{
+                    font-size: 4rem;
+                }
+                .def{
+                    font-size: .9rem;
+                }
+            }
+            .ctPlay{
+                font-size: .9rem;
+                border-radius: 10px;
+            }
+        }
+        .gameInfo{
+            .pageTitle{
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                
+            }
+        
+            .info{
+                margin-bottom: 2rem;
+                .title{
+                    font-size: 1.8rem;
+                    &::before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        height: 5px;
+                        background-color: rgb(140, 212, 253);
+                        width: 300px;
+                        top: 100%;
+                        
+    
+                    }
+    
+                }
+                .text{
+                    font-size: .9rem;
+                }
+               
+    
+            }
+    
+        }
+    
+        .contactUs{
+            
+            gap: 4rem;
+            padding: 0 8rem;
+            .pageTitle{
+                font-size: 2rem;
+            }
+            .description{
+                
+                .desTitle{
+                    font-size: 2rem;
+                    margin: 2rem 0;
+                }
+                p{
+                    font-size: .9rem;
+                }
+            }
+            .form{
+                column-gap: 3%;
+                .inputGroupe{
+                    margin: 1rem 0 ;
+                    position: relative;
+                    input , textarea{
+                        width: 100%;
+                        padding: 5px;
+                        &:focus + label{
+                            transform: translateY(-23px);
+                        }
+                    }
+                    textarea{
+                        height: 200px;
+                    } 
+                }
+                .Half_Width{
+                    flex-basis: 48%;
+                }
+                .Full_Width{
+                    flex-basis: 100%;
+                }
+                
+                .sendBtn{
+                    font-size: .7rem;
+                }
+            }
+        }
+
+        .footer{
+            max-height: 150px;
+            padding: 1.8rem 2rem;
+            .sicial_icon li{
+                font-size: 1.6rem;
+            }
+            .menu li{
+                font-size: 1.2rem;
+            }
+        }
+    
+    }
+    
+        
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .homePage{
+        .HomeNav{
+            height: 75px;
+            padding-left: 5rem;
+            padding-top: 1.8rem;
+            .homeLogo{
+                margin: 0 2%;
+                .logoImg{
+                    font-size: 4rem;
+                }
+                .title{
+                    font-size: 1.8rem;
+                }
+    
+            }
+        }
+    
+        .header{
+            .text{
+                .title{
+                    font-size: 3.2rem;
+                }
+                .def{
+                    font-size: .8rem;
+                }
+            }
+            .ctPlay{
+                font-size: .8rem;
+            }
+        }
+        .gameInfo{
+            .pageTitle{
+                font-size: 2rem;
+            }
+        
+            .info{
+                margin-bottom: 2rem;
+                .title{
+                    font-size: 1.2rem;
+                }
+                .text{
+                    font-size: .7rem;
+                }
+               
+    
+            }
+    
+        }
+    
+        .contactUs{
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0 8rem;
+            margin-bottom: 8rem;
+            margin-top: 1rem;
+            height: fit-content;
+            .pageTitle{
+                font-size: 2rem;
+            }
+            .description{
+                
+                .desTitle{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: .9rem;
+                }
+            }
+            .form{
+                
+                .inputGroupe{
+                    margin: 1rem 0 ;
+                    position: relative;
+                    input , textarea{
+                        width: 100%;
+                        padding: 5px;
+                        &:focus + label{
+                            transform: translateY(-23px);
+                        }
+                    }
+                    textarea{
+                        height: 200px;
+                    } 
+                }
+                .Half_Width{
+                    flex-basis: 48%;
+                }
+                .Full_Width{
+                    flex-basis: 100%;
+                }
+                
+                .sendBtn{
+                    font-size: .7rem;
+                }
+            }
+        }
+
+        .footer{
+            max-height: 150px;
+            padding: 1.8rem 2rem;
+            .sicial_icon li{
+                font-size: 1.6rem;
+            }
+            .menu li{
+                font-size: 1.2rem;
+            }
+        }
+    
+    }
+    
+        
+}
+
+@media screen and (max-width:800px) {
+    .homePage{
+        .HomeNav{
+            height: 70px;
+            padding-left: 2rem;
+            padding-top: 1.5rem;
+            .homeLogo{
+                margin: 0 2%;
+                .logoImg{
+                    font-size: 2.5rem;
+                }
+                .title{
+                    font-size: 1.3rem;
+                }
+    
+            }
+            .options{
+                .option{
+                    a{
+                        font-size: .9rem;
+                    }
+                   
+    
+                }
+    
+            }
+        }
+    
+    }
+    
+        
+}
+
+
+
+
+
+
+#wave1{
+    z-index: 1000;
+    opacity: 1;
+  
+    animation: animatewave 4s linear infinite;
+}
+#wave2{
+    z-index: 999;
+    opacity: .5;
+    animation: animatewave_2 4s linear infinite;
+}
+#wave3{
+    z-index: 1000;
+    opacity: .2;
+    animation: animatewave 3s linear infinite;
+}
+#wave4{
+    z-index: 999;
+    opacity: .7;
+    animation: animatewave_2 3s linear infinite;
+}
+

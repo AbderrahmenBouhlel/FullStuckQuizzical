@@ -1,0 +1,172 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: rgb(66, 100, 209);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+}
+.nav .nav_links {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 1.6rem;
+  gap: 2.5rem;
+}
+.nav .nav_links .signupCont::after {
+  content: "SignUp";
+}
+.nav .nav_links .signupCont:hover::after {
+  display: block;
+}
+.nav .nav_links .loginCont::after {
+  content: "LoginIn";
+}
+.nav .nav_links .loginCont:hover::after {
+  display: block;
+}
+
+.iconCont {
+  background-color: rgb(127, 177, 218);
+  color: white;
+  margin: 0 10px;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.iconCont .icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.iconCont::after {
+  position: absolute;
+  top: 105%;
+  font-size: 0.7rem;
+  background-color: rgba(177, 197, 223, 0.9);
+  color: black;
+  display: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.iconCont:hover {
+  transform: scale(1.05);
+}
+.iconCont:active {
+  transform: scale(1.03);
+}
+
+.logoContainer {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  width: 300px;
+}
+
+.buttonContainer {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  z-index: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonContainer .check {
+  background-color: wheat;
+  color: white;
+  z-index: 300;
+  position: absolute;
+  opacity: 0;
+}
+.buttonContainer .sunIcon {
+  font-size: 2.5rem;
+  color: #666;
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: 1s ease;
+  position: absolute;
+}
+.buttonContainer .moonIcon {
+  font-size: 2.5rem;
+  color: #666;
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+  transition: 1s ease;
+  transition-delay: s;
+  transform: scale(0);
+}
+.buttonContainer .toogle {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: inset 0 30px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1); /* Inset shadow 3 */
+  z-index: -1;
+  transition: 1s;
+}
+.buttonContainer input:checked ~ .toogle {
+  background-color: #2b2b2b;
+}
+.buttonContainer input:checked ~ .moonIcon {
+  transition-delay: 0.8s;
+  transform: scale(1) rotate(360deg);
+}
+.buttonContainer input:checked ~ .sunIcon {
+  transition-delay: 0s;
+  transform: rotate(360deg) scale(0);
+}
+
+@media screen and (max-width: 1000px) {
+  .iconCont {
+    padding: 0.7rem;
+  }
+  .iconCont .icon {
+    font-size: 1rem;
+  }
+  .iconCont::after {
+    font-size: 0.6rem;
+  }
+  .logoContainer {
+    width: 270px;
+  }
+}
+.iconCont.darkMood {
+  background-color: rgb(133, 206, 169);
+  color: black;
+}
+.iconCont.darkMood::after {
+  background-color: rgb(133, 206, 169);
+  color: black;
+}
+
+.nav.darkMood {
+  background-color: rgb(133, 206, 169);
+}
+.nav.darkMood .logo.darkMood .title {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.nav.darkMood .logo.darkMood .logoImg {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=main.css.map */

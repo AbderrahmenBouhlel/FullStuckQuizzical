@@ -1,0 +1,321 @@
+.gameContainer {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 15rem;
+  margin-top: 0;
+  z-index: 200;
+  align-self: self-start;
+}
+.gameContainer .logoutContainer {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+}
+.gameContainer .blob {
+  z-index: 0;
+  position: fixed;
+  width: 300px;
+  height: 250px;
+}
+.gameContainer .blob.left {
+  bottom: 0;
+  left: 0;
+}
+.gameContainer .blob.right {
+  top: 0;
+  right: 0;
+}
+.gameContainer .intro-section h1 {
+  font-size: 2.2rem;
+  color: rgb(41, 50, 100);
+  margin-bottom: 2rem;
+}
+.gameContainer .intro-section p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: rgb(41, 50, 100);
+}
+.gameContainer .intro-section .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gameContainer .intro-section .options .option {
+  background-color: rgb(127, 177, 218);
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem 3rem;
+  width: 190px;
+  margin-bottom: 0.7rem;
+}
+.gameContainer .intro-section .options .option [id*=gameBtn]:checked + ul {
+  display: block;
+}
+.gameContainer .intro-section .options .option label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.9rem;
+  gap: 5px;
+  cursor: pointer;
+}
+.gameContainer .intro-section .options .option label .dropDownIcon {
+  min-width: 15px;
+  margin-left: auto;
+}
+.gameContainer .intro-section .options .option .menu {
+  top: 48px;
+}
+.gameContainer .intro-section .options .option .menu::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(127, 177, 218);
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  z-index: 1;
+  right: 9px;
+  top: -5px;
+}
+.gameContainer .intro-section .options .option ul {
+  position: absolute;
+  background-color: rgb(127, 177, 218);
+  list-style: none;
+  width: 100%;
+  right: 10px;
+  border-radius: 5px;
+  display: none;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.gameContainer .intro-section .options .option ul li {
+  text-align: left;
+  padding: 2px 10px;
+  line-height: 17px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  text-wrap: nowrap;
+  font-size: 13px;
+}
+.gameContainer .intro-section .options .option ul li label {
+  padding: 0.1rem;
+  font-size: 14px;
+  align-items: center;
+}
+.gameContainer .intro-section .options .option ul li label .dropDownIcon {
+  margin-top: 5px;
+  min-width: 20px;
+  margin-left: auto;
+}
+.gameContainer .intro-section .options .option ul li ul {
+  position: static;
+}
+.gameContainer .intro-section .options .option ul li ul li {
+  line-height: 15px;
+  padding-left: 20px;
+  border-bottom: none;
+  text-align: left;
+  cursor: pointer;
+}
+.gameContainer .intro-section .options .option ul li ul li:hover {
+  color: black;
+}
+.gameContainer .intro-section .options .option ul li:not(:has(> label)) {
+  cursor: pointer;
+}
+.gameContainer .intro-section .options .option ul li:not(:has(> label)):hover {
+  color: black;
+}
+.gameContainer .intro-section .startBtn {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  margin: 1.5rem;
+  cursor: pointer;
+  color: rgb(41, 50, 100);
+  transition: all 0.4s ease-in-out;
+}
+.gameContainer .intro-section .startBtn:hover {
+  background-color: rgb(41, 50, 100);
+  color: white;
+}
+.gameContainer .score {
+  position: fixed;
+  top: 30px;
+  right: 8%;
+  z-index: 200;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+.gameContainer .score p {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(221, 221, 221, 0.6);
+  z-index: -1;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  color: gray;
+  text-wrap: nowrap;
+}
+.gameContainer .score .levelIconCont {
+  position: relative;
+  cursor: pointer;
+}
+.gameContainer .score .levelIconCont .level {
+  top: 10px;
+  left: 80%;
+}
+.gameContainer .score .levelIconCont:hover .level {
+  visibility: visible;
+}
+.gameContainer .score .levelBarCont {
+  position: relative;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+.gameContainer .score .levelBarCont .score {
+  top: 120%;
+  left: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: translateX(-50%);
+}
+.gameContainer .score .levelBarCont:hover .score {
+  visibility: visible;
+}
+
+input[type=checkbox][id*=gameBtn] {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .gameContainer .logoutContainer {
+    position: fixed;
+    right: 1rem;
+    top: 85%;
+  }
+  .gameContainer .blob {
+    z-index: 0;
+    position: fixed;
+    width: 250px;
+    height: 200px;
+  }
+  .gameContainer .intro-section h1 {
+    font-size: 1.8rem;
+    color: rgb(41, 50, 100);
+    margin-bottom: 2rem;
+  }
+  .gameContainer .intro-section p {
+    font-size: 0.9rem;
+    margin: 0.5rem auto;
+    max-width: 85%;
+  }
+  .gameContainer .intro-section .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .gameContainer .intro-section .options .option {
+    border-radius: 10px;
+    position: relative;
+    margin: 2rem 3rem;
+    width: 150px;
+    margin-bottom: 0.7rem;
+  }
+  .gameContainer .intro-section .options .option [id^=btn]:checked + ul {
+    display: block;
+  }
+  .gameContainer .intro-section .options .option label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+  }
+  .gameContainer .intro-section .options .option .menu {
+    top: 40px;
+  }
+  .gameContainer .intro-section .options .option .menu::before {
+    width: 8px;
+  }
+  .gameContainer .intro-section .options .option ul li {
+    padding: 2px 10px;
+    text-wrap: nowrap;
+    font-size: 10px;
+  }
+  .gameContainer .intro-section .options .option ul li label {
+    font-size: 12px;
+  }
+  .gameContainer .intro-section .options .option ul li ul {
+    position: static;
+  }
+  .gameContainer .intro-section .options .option ul li ul li {
+    line-height: 15px;
+    padding-left: 20px;
+  }
+  .gameContainer .intro-section .startBtn {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    margin: 1.2rem;
+  }
+  .gameContainer .score {
+    position: fixed;
+    z-index: 200;
+    padding: 0.5rem;
+  }
+  .gameContainer .score p {
+    z-index: -1;
+    padding: 0.2rem;
+    font-size: 0.6rem;
+  }
+  .gameContainer .score .levelBarCont {
+    margin-top: 1.2rem;
+  }
+}
+.gameContainer.darkMood .intro-section h1 {
+  color: rgb(133, 206, 169);
+}
+.gameContainer.darkMood .intro-section p {
+  color: rgb(133, 206, 169);
+}
+.gameContainer.darkMood .intro-section .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.gameContainer.darkMood .intro-section .options .option {
+  background-color: rgb(133, 206, 169);
+  color: black;
+}
+.gameContainer.darkMood .intro-section .options .option .menu::before {
+  background-color: rgb(133, 206, 169);
+}
+.gameContainer.darkMood .intro-section .options .option ul {
+  background-color: rgb(133, 206, 169);
+  color: black;
+}
+.gameContainer.darkMood .intro-section .options .option ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.gameContainer.darkMood .intro-section .startBtn {
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
+.gameContainer.darkMood .intro-section .startBtn:hover {
+  background-color: rgb(133, 206, 169);
+  color: black;
+}
+.gameContainer.darkMood .score p {
+  background-color: rgb(133, 206, 169);
+}/*# sourceMappingURL=game.css.map */

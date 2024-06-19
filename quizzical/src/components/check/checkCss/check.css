@@ -1,0 +1,172 @@
+.answerContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.answerContainer .blob {
+  z-index: 0;
+  position: fixed;
+  width: 300px;
+  height: 250px;
+}
+.answerContainer .blob.left {
+  bottom: 0;
+  left: 0;
+}
+.answerContainer .blob.right {
+  top: 0;
+  right: 0;
+}
+.answerContainer .quizzes-section {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+.answerContainer .quizzes-section .quizzCheck {
+  padding: 1rem 1rem;
+  width: 900px;
+}
+.answerContainer .quizzes-section .quizzCheck .question {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  color: rgb(41, 50, 100);
+}
+.answerContainer .quizzes-section .quizzCheck .answers {
+  display: flex;
+  justify-content: left;
+  padding: 0.9rem 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.answerContainer .quizzes-section .quizzCheck .answers .answer {
+  padding: 0.2rem;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(77, 91, 158, 0.5);
+  color: rgba(41, 50, 100, 0.5);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.answerContainer .quizzes-section .quizzCheck .answers .answer.selecedAnswer {
+  background-color: rgba(248, 188, 188, 0.8);
+  border-color: transparent;
+}
+.answerContainer .quizzes-section .quizzCheck .answers .answer.correctAnswer {
+  color: rgb(41, 50, 100);
+  background-color: rgb(148, 215, 162);
+  border-color: transparent;
+}
+.answerContainer .quizzes-section .quizzCheck hr {
+  width: 800px;
+  margin: 0 3px;
+  display: block;
+  border: 1px solid rgb(219, 222, 240);
+}
+.answerContainer .quizzes-section .scrore-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.answerContainer .quizzes-section .scrore-section .score {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(41, 50, 100);
+}
+.answerContainer .quizzes-section .scrore-section .checkBtn {
+  background-color: rgb(77, 91, 158);
+  padding: 0.9rem 1.1rem;
+  color: white;
+  margin: 1rem auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .answerContainer .quizzes-section .quizzCheck .question {
+    font-size: 0.9rem;
+  }
+  .answerContainer .quizzes-section .quizzCheck .answers {
+    padding: 0.8rem 0;
+  }
+  .answerContainer .quizzes-section .quizzCheck .answers .answer {
+    font-size: 0.8rem;
+  }
+  .answerContainer .quizzes-section .quizzCheck hr {
+    width: 750px;
+  }
+  .answerContainer .quizzes-section .scrore-section {
+    gap: 1.8rem;
+  }
+  .answerContainer .quizzes-section .scrore-section .score {
+    font-size: 0.9rem;
+  }
+  .answerContainer .quizzes-section .scrore-section .checkBtn {
+    padding: 0.8rem 1rem;
+    margin: 0.9rem auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .answerContainer .quizzes-section .quizzCheck .question {
+    font-size: 0.8rem;
+  }
+  .answerContainer .quizzes-section .quizzCheck .answers {
+    padding: 0.7rem 0;
+  }
+  .answerContainer .quizzes-section .quizzCheck .answers .answer {
+    font-size: 0.7rem;
+  }
+  .answerContainer .quizzes-section .quizzCheck hr {
+    width: 108%;
+  }
+  .answerContainer .quizzes-section .scrore-section {
+    gap: 1.7rem;
+  }
+  .answerContainer .quizzes-section .scrore-section .score {
+    font-size: 0.8rem;
+  }
+  .answerContainer .quizzes-section .scrore-section .checkBtn {
+    font-size: 0.7rem;
+    padding: 0.7rem 0.9rem;
+    margin: 0.8rem auto;
+  }
+}
+.answerContainer.darkMood .quizzes-section .quizzCheck .question {
+  color: rgb(133, 206, 169);
+}
+.answerContainer.darkMood .quizzes-section .quizzCheck .answers .answer {
+  border: 1px solid rgb(133, 206, 169);
+  color: rgb(133, 206, 169);
+}
+.answerContainer.darkMood .quizzes-section .quizzCheck .answers .answer.selecedAnswer {
+  background-color: rgba(248, 188, 188, 0.8);
+  border-color: transparent;
+}
+.answerContainer.darkMood .quizzes-section .quizzCheck .answers .answer.correctAnswer {
+  color: rgb(41, 50, 100);
+  background-color: rgb(148, 215, 162);
+  border-color: transparent;
+}
+.answerContainer.darkMood .quizzes-section .scrore-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.answerContainer.darkMood .quizzes-section .scrore-section .score {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(133, 206, 169);
+}
+.answerContainer.darkMood .quizzes-section .scrore-section .checkBtn {
+  background-color: rgb(133, 206, 169);
+  padding: 0.9rem 1.1rem;
+  color: black;
+  margin: 1rem auto;
+}/*# sourceMappingURL=check.css.map */

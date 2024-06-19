@@ -1,0 +1,39 @@
+.levelIconCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.levelIconCont .snowIcon {
+  font-size: 2.5rem;
+  color: rgb(155, 2, 2);
+}
+.levelIconCont .starRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.levelIconCont .starRow .icon {
+  font-size: 1.3rem;
+}
+.levelIconCont .starRow .icon.filled {
+  color: rgb(164, 204, 236);
+}
+
+@media screen and (max-width: 700px) {
+  .levelIconCont .snowIcon {
+    font-size: 2rem;
+  }
+  .levelIconCont .starRow .icon {
+    font-size: 1.1rem;
+  }
+}
+.levelIconCont.darkMood .snowIcon {
+  color: rgb(133, 206, 169);
+}
+.levelIconCont.darkMood .starRow .icon {
+  color: rgb(133, 206, 169);
+}
+.levelIconCont.darkMood .starRow .icon.filled {
+  color: rgb(133, 206, 169);
+}/*# sourceMappingURL=levelIcon.css.map */

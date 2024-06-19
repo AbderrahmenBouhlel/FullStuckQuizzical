@@ -1,0 +1,75 @@
+.levelBarCont{
+    height: 25px;
+    width: 180px;
+    position: relative;
+    .progress-bar{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgba(168, 168, 168, 0.5);
+        overflow: hidden;
+        
+        .progress-bar-fill{
+            background-color: rgb(161, 197, 230);
+            height: 100%;
+        }  
+    
+    }
+    .progress_label{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: .9rem;
+        position: absolute;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .levelBarCont{
+        height: 20px;
+        width: 150px;
+        .progress-bar{
+            .progress-bar-fill{
+                background-color: rgb(161, 197, 230);
+                height: 100%;
+            }  
+        }
+        .progress_label{
+            font-size: .7rem;
+        }
+    }
+}
+
+
+
+.levelBarCont.darkMood{
+    
+    position: relative;
+    .progress-bar{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgba(168, 168, 168, 0.5);
+        overflow: hidden;
+        
+        .progress-bar-fill{
+            background-color: rgb(254, 255, 190);
+            height: 100%;
+        }  
+    
+    }
+    .progress_label{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: .9rem;
+        position: absolute;
+    }
+
+}
+
+
+
+

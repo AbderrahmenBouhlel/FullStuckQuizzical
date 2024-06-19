@@ -1,0 +1,6 @@
+.logoutCont::after {
+  content: "logOut";
+}
+.logoutCont:hover::after {
+  display: block;
+}/*# sourceMappingURL=logout.css.map */

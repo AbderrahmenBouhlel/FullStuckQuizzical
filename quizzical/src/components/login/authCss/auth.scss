@@ -1,0 +1,391 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    .authContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-radius: 10px;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: transparent;
+        background-color: white;
+        padding-right: 10%;
+        .imgContainer{
+            z-index: 8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.2rem;
+            border-radius: 10px;
+            .imageProCont{
+                canvas{
+                    width: 100%;
+                    height: 100%;
+                }
+                img{
+                    display: none;
+                }
+            }
+           
+           
+        }
+        .formConatiner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 2rem;
+            padding-left: 5rem;
+            position: relative;
+            .error{
+                position: absolute;
+                top: 140px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: .9rem;
+                color: rgb(250, 127, 127);
+                font-weight: 600;
+                text-wrap: nowrap;
+                &.success{
+                    color: rgb(27, 179, 27);
+                }
+            }
+            
+            h2{
+                font-size: 2rem;
+                padding-bottom: 1rem;
+                font-weight: 600;
+            }
+            p{
+                padding-bottom: 1.1rem;
+                font-size: 1rem;
+                color: rgb(138, 133, 133);
+    
+            }
+            .inputField{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-bottom: 1.2rem;
+                width: 100%;
+                label{
+                    font-size: 1.1rem;
+                    color: rgb(99, 99, 99);
+                    .faStar{
+                        font-size: .6rem;
+                        color: rgb(252, 129, 129);
+                        margin-right: 5px;
+                    }
+    
+                }
+                input{
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid rgb(219, 219, 219);
+                    border-radius: 7px;
+                    outline: none;
+                    padding: 7px;
+                    color: rgb(104, 104, 104);
+                }
+                & .withEyeSlash{
+                    position: relative;
+                    width: 100%;
+                    .faEye{
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                        color: rgb(124, 117, 117);
+    
+                    }
+                }
+    
+            }
+            button{
+                width: 100%;
+                padding: .5rem;
+                margin: .5rem 0;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 1rem;
+                &.signBtn{
+                    background-color: rgb(46, 127, 248);
+                    color: white;
+                }
+               
+            }
+           
+        }
+        .formConatiner.login{
+            padding-left: 1rem;
+        }
+    
+    }
+}
+
+
+
+@media screen and (max-width:1300px) {
+    .mainContainer{
+        .authContainer{
+            .imgContainer{
+                padding: 1.1rem;
+                img{
+                    width: 80%;
+                    height: 80%;
+                    
+                }
+            }
+            .formConatiner{
+                padding: 0 1.5rem;
+                padding-left: 5rem;
+                
+                h2{
+                    font-size: 1.8rem;
+                    padding-bottom: .9rem;
+                }
+                p{
+                    padding-bottom: 1rem;
+                    font-size: .9rem;
+        
+                }
+                .inputField{
+                    padding-bottom: 1.1rem;
+                    label{
+                        font-size: 1rem;
+                        .faStar{
+                            font-size: .5rem;
+                        }
+        
+                    }
+                    input{
+                        height: 37px;
+                        font-size: .8rem;
+                    }
+                    & .withEyeSlash{
+                        position: relative;
+                        width: 100%;
+                        .faEye{
+                            font-size: .8rem;
+        
+                        }
+                    }
+        
+                }
+                button{
+                    padding: .4rem;
+                    margin: .5rem 0;
+                    cursor: pointer;
+                    font-size: .9rem;
+                   
+                }
+               
+            }
+            .formConatiner.login{
+                padding-left: .9rem;
+            }
+        
+        }
+    }    
+}
+
+
+@media screen and (max-width:900px) {
+    .mainContainer{
+        .authContainer{
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: 1fr;
+            height: fit-content;
+            margin-top: 5rem;
+            row-gap: -2rem;
+            padding-right: 0;
+            justify-content: center;
+            align-items: center;
+            .imgContainer{
+                height: fit-content;
+                width: fit-content;
+                order: 1;
+                padding: 1rem;
+                img{
+                    width: 80%;
+                    height: 80%;
+                    
+                }
+            }
+            .formConatiner{
+                margin: 0 auto;
+                padding: 0 0;
+                padding-left: 0;
+                width: 90%;
+                order: 2;
+                
+                h2{
+                    font-size: 1.7rem;
+                    padding-bottom: .8rem;
+                }
+                p{
+                    padding-bottom: .9rem;
+                    font-size: .8rem;
+        
+                }
+                .inputField{
+                    padding-bottom: 1rem;
+                    label{
+                        font-size: .9rem;
+                        .faStar{
+                            font-size: .5rem;
+                        }
+        
+                    }
+                    input{
+                        height: 37px;
+                        font-size: .7rem;
+                    }
+                    & .withEyeSlash{
+                        position: relative;
+                        width: 100%;
+                        .faEye{
+                            font-size: .8rem;
+        
+                        }
+                    }
+        
+                }
+                button{
+                    padding: .3rem;
+                    margin: .5rem 0;
+                    cursor: pointer;
+                    font-size: .8rem;
+                    margin-left: auto;
+                   
+                }
+               
+            }
+            .formConatiner.login{
+                padding: 0 2rem;
+            }
+        
+        }
+    }    
+}
+
+
+// darkMood style
+.mainContainer.darkMood{
+    .authContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-radius: 10px;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: transparent;
+        background-color: white;
+        padding-right: 10%;
+        .imgContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.2rem;
+            border-radius: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit:fill;
+            }
+        }
+        .formConatiner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 2rem;
+            padding-left: 5rem;
+            position: relative;
+            .error{
+                position: absolute;
+                top: 140px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: .9rem;
+                color: rgb(250, 127, 127);
+                font-weight: 600;
+                text-wrap: nowrap;
+                &.success{
+                    color: rgb(27, 179, 27);
+                }
+            }
+            
+            h2{
+    
+                color: rgb(133, 206, 169);
+            }
+            p{
+    
+                color: rgb(133, 206, 169);
+    
+            }
+            .inputField{
+              
+                label{
+                    font-size: 1.1rem;
+                    color: rgb(133, 206, 169);
+                    .faStar{
+                        color: rgb(80, 131, 87);
+                    }
+    
+                }
+                input{
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid rgb(133, 206, 169);
+                    border-radius: 7px;
+                    outline: none;
+                    padding: 7px;
+                    color: rgb(104, 104, 104);
+                    background-color: black;
+                }
+                & .withEyeSlash{
+                    position: relative;
+                    width: 100%;
+                    .faEye{
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                        color: rgb(124, 117, 117);
+    
+                    }
+                }
+    
+            }
+            button{
+                width: 100%;
+                padding: .5rem;
+                margin: .5rem 0;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 1rem;
+                &.signBtn{
+                    background-color: rgb(133, 206, 169);
+                    color: black;
+                }
+               
+            }
+           
+        }
+        .formConatiner.login{
+            padding-left: 1rem;
+        }
+    
+    }
+}
+
+
+

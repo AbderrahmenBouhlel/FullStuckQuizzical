@@ -1,0 +1,334 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.mainContainer .authContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: transparent;
+  background-color: white;
+  padding-right: 10%;
+}
+.mainContainer .authContainer .imgContainer {
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.mainContainer .authContainer .imgContainer .imageProCont canvas {
+  width: 100%;
+  height: 100%;
+}
+.mainContainer .authContainer .imgContainer .imageProCont img {
+  display: none;
+}
+.mainContainer .authContainer .formConatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  padding-left: 5rem;
+  position: relative;
+}
+.mainContainer .authContainer .formConatiner .error {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: rgb(250, 127, 127);
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.mainContainer .authContainer .formConatiner .error.success {
+  color: rgb(27, 179, 27);
+}
+.mainContainer .authContainer .formConatiner h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.mainContainer .authContainer .formConatiner p {
+  padding-bottom: 1.1rem;
+  font-size: 1rem;
+  color: rgb(138, 133, 133);
+}
+.mainContainer .authContainer .formConatiner .inputField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 1.2rem;
+  width: 100%;
+}
+.mainContainer .authContainer .formConatiner .inputField label {
+  font-size: 1.1rem;
+  color: rgb(99, 99, 99);
+}
+.mainContainer .authContainer .formConatiner .inputField label .faStar {
+  font-size: 0.6rem;
+  color: rgb(252, 129, 129);
+  margin-right: 5px;
+}
+.mainContainer .authContainer .formConatiner .inputField input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 7px;
+  outline: none;
+  padding: 7px;
+  color: rgb(104, 104, 104);
+}
+.mainContainer .authContainer .formConatiner .inputField .withEyeSlash {
+  position: relative;
+  width: 100%;
+}
+.mainContainer .authContainer .formConatiner .inputField .withEyeSlash .faEye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(124, 117, 117);
+}
+.mainContainer .authContainer .formConatiner button {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.mainContainer .authContainer .formConatiner button.signBtn {
+  background-color: rgb(46, 127, 248);
+  color: white;
+}
+.mainContainer .authContainer .formConatiner.login {
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .mainContainer .authContainer .imgContainer {
+    padding: 1.1rem;
+  }
+  .mainContainer .authContainer .imgContainer img {
+    width: 80%;
+    height: 80%;
+  }
+  .mainContainer .authContainer .formConatiner {
+    padding: 0 1.5rem;
+    padding-left: 5rem;
+  }
+  .mainContainer .authContainer .formConatiner h2 {
+    font-size: 1.8rem;
+    padding-bottom: 0.9rem;
+  }
+  .mainContainer .authContainer .formConatiner p {
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField {
+    padding-bottom: 1.1rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField label {
+    font-size: 1rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField label .faStar {
+    font-size: 0.5rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField input {
+    height: 37px;
+    font-size: 0.8rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField .withEyeSlash {
+    position: relative;
+    width: 100%;
+  }
+  .mainContainer .authContainer .formConatiner .inputField .withEyeSlash .faEye {
+    font-size: 0.8rem;
+  }
+  .mainContainer .authContainer .formConatiner button {
+    padding: 0.4rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .mainContainer .authContainer .formConatiner.login {
+    padding-left: 0.9rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mainContainer .authContainer {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 5rem;
+    row-gap: -2rem;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContainer .authContainer .imgContainer {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    order: 1;
+    padding: 1rem;
+  }
+  .mainContainer .authContainer .imgContainer img {
+    width: 80%;
+    height: 80%;
+  }
+  .mainContainer .authContainer .formConatiner {
+    margin: 0 auto;
+    padding: 0 0;
+    padding-left: 0;
+    width: 90%;
+    order: 2;
+  }
+  .mainContainer .authContainer .formConatiner h2 {
+    font-size: 1.7rem;
+    padding-bottom: 0.8rem;
+  }
+  .mainContainer .authContainer .formConatiner p {
+    padding-bottom: 0.9rem;
+    font-size: 0.8rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField {
+    padding-bottom: 1rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField label {
+    font-size: 0.9rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField label .faStar {
+    font-size: 0.5rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField input {
+    height: 37px;
+    font-size: 0.7rem;
+  }
+  .mainContainer .authContainer .formConatiner .inputField .withEyeSlash {
+    position: relative;
+    width: 100%;
+  }
+  .mainContainer .authContainer .formConatiner .inputField .withEyeSlash .faEye {
+    font-size: 0.8rem;
+  }
+  .mainContainer .authContainer .formConatiner button {
+    padding: 0.3rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: auto;
+  }
+  .mainContainer .authContainer .formConatiner.login {
+    padding: 0 2rem;
+  }
+}
+.mainContainer.darkMood .authContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: transparent;
+  background-color: white;
+  padding-right: 10%;
+}
+.mainContainer.darkMood .authContainer .imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+.mainContainer.darkMood .authContainer .imgContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.mainContainer.darkMood .authContainer .formConatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  padding-left: 5rem;
+  position: relative;
+}
+.mainContainer.darkMood .authContainer .formConatiner .error {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: rgb(250, 127, 127);
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.mainContainer.darkMood .authContainer .formConatiner .error.success {
+  color: rgb(27, 179, 27);
+}
+.mainContainer.darkMood .authContainer .formConatiner h2 {
+  color: rgb(133, 206, 169);
+}
+.mainContainer.darkMood .authContainer .formConatiner p {
+  color: rgb(133, 206, 169);
+}
+.mainContainer.darkMood .authContainer .formConatiner .inputField label {
+  font-size: 1.1rem;
+  color: rgb(133, 206, 169);
+}
+.mainContainer.darkMood .authContainer .formConatiner .inputField label .faStar {
+  color: rgb(80, 131, 87);
+}
+.mainContainer.darkMood .authContainer .formConatiner .inputField input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(133, 206, 169);
+  border-radius: 7px;
+  outline: none;
+  padding: 7px;
+  color: rgb(104, 104, 104);
+  background-color: black;
+}
+.mainContainer.darkMood .authContainer .formConatiner .inputField .withEyeSlash {
+  position: relative;
+  width: 100%;
+}
+.mainContainer.darkMood .authContainer .formConatiner .inputField .withEyeSlash .faEye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(124, 117, 117);
+}
+.mainContainer.darkMood .authContainer .formConatiner button {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.mainContainer.darkMood .authContainer .formConatiner button.signBtn {
+  background-color: rgb(133, 206, 169);
+  color: black;
+}
+.mainContainer.darkMood .authContainer .formConatiner.login {
+  padding-left: 1rem;
+}/*# sourceMappingURL=auth.css.map */
