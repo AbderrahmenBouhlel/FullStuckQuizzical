@@ -11,7 +11,7 @@
   "author": "abderrahmen",
   "license": "ISC",
   "dependencies": {
-    "@google/generative-ai": "^1.0.0",
+    "@google/generative-ai": "latest",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
