@@ -38,7 +38,7 @@ export default function App() {
       
   }
   function addScore(score){
-    fetch(`http://localhost:3000/api/auth/openai/addScore`, {
+    fetch(`https://fullstuckquizzical-2.onrender.com/api/auth/openai/addScore`, {
       method:'POST',
       headers: { 
         'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ export default function App() {
 
     setQuizzes(quizzesArray)
 
-    fetch('http://localhost:3000/api/auth/openai/getHint', {
+    fetch('https://fullstuckquizzical-2.onrender.com/api/auth/openai/getHint', {
         method:'POST',
         headers: { 
           'Content-Type': 'application/json',

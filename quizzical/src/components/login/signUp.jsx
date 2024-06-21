@@ -68,7 +68,7 @@ export default function SignUp(props){
 
         setError('');
         const { password2:_, ...reqData} = formData
-        fetch('http://localhost:3000/api/auth/signup',{
+        fetch('https://fullstuckquizzical-2.onrender.com/api/auth/signup',{
             method:"POST",
             headers:{
                 'content-Type':'application/json',

@@ -55,7 +55,7 @@ export default function Login(props){
         } 
 
         setError('');
-        fetch('http://localhost:3000/api/auth/login',{
+        fetch('https://fullstuckquizzical-2.onrender.com/api/auth/login',{
             method:"POST",
             headers:{
                 'content-Type':'application/json',
