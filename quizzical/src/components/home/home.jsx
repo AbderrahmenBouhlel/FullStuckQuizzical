@@ -32,6 +32,12 @@ export default function Home(props){
     }
 
 
+
+    function handleSignUp(){
+        navigate('/')
+    }
+
+
     return (
         <div className="homePage">
             <nav className="HomeNav">
@@ -47,7 +53,7 @@ export default function Home(props){
                         <a href="" onClick={scrollToContatUs}>contact Us</a>
                     </div>
                     <div className="option">
-                        <a href="">about Us</a>
+                        <a onClick={handleSignUp}>signUp</a>
                     </div>
                 </div>
             </nav>
@@ -197,7 +203,6 @@ export default function Home(props){
                 </ul>
                 <ul className="menu">
                     <li onClick={scrollToHome}>Home</li>
-                    <li>about</li>
                     <li onClick={scrollToContatUs}>contact</li>
                 </ul>
 

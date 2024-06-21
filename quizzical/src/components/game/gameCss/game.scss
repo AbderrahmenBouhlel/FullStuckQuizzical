@@ -31,6 +31,13 @@
             top: 0;
             right: 0;
         }
+        &.leftYello{
+            transform: rotate(180deg);
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            height: 200px;
+        }
     }
     .intro-section{
         h1{
@@ -344,25 +351,19 @@ input[type="checkbox"][id*="gameBtn"] {
 
   
 .gameContainer.darkMood{
-    
     .intro-section{
         h1{
             color:  rgb(133, 206, 169);
         }
         p{
-            color:  rgb(133, 206, 169);
+            color:  white;
 
         }
         .options{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
+
             .option{
                 background-color: rgb(133, 206, 169);
-                color: black;
-            
-                
+                color: white;
                 .menu{
                     &::before{
                         background-color: rgb(133, 206, 169);
@@ -390,13 +391,11 @@ input[type="checkbox"][id*="gameBtn"] {
             }
 
         }
-        .startBtn{
-            
+        .startBtn{  
             color: black;
-            transition: all .4s ease-in-out;
             &:hover{
                 background-color:rgb(133, 206, 169) ;
-                color: black;
+                color: white;
             }
             
 

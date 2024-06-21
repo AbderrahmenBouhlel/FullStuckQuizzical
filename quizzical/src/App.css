@@ -22,5 +22,15 @@
   left: 0;
 }
 .bgCover.darkMood{
-  background-color: black;
+  background-color: #1f1f14;
+}
+
+
+/* blob style */
+.blob.leftYello{
+  transform: rotate(180deg);
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
 }

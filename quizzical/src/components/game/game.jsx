@@ -94,7 +94,7 @@ export default function Game(props){
             </div>
             
             <img src={Blob1R} alt="" className="blob right" />
-            {props.darkMood ? null : <img src={Blob1L} alt="" className="blob left" />  }
+            {props.darkMood ? <img src={Blob1R} alt="" className="blob leftYello" /> : <img src={Blob1L} alt="" className="blob left" />  }
 
             <div className="intro-section">
                 <h1 className="title">Quizzical</h1>

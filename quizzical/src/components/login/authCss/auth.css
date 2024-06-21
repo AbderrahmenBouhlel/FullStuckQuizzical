@@ -236,15 +236,19 @@
     padding: 0 2rem;
   }
 }
+.mainContainer.darkMood {
+  max-height: 100vh;
+}
 .mainContainer.darkMood .authContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
-  min-height: 100vh;
-  min-width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
   background-color: transparent;
   background-color: white;
   padding-right: 10%;
+  align-items: center;
 }
 .mainContainer.darkMood .authContainer .imgContainer {
   display: flex;
@@ -252,12 +256,12 @@
   justify-content: center;
   padding: 1.2rem;
   border-radius: 10px;
+  box-sizing: border-box;
 }
-.mainContainer.darkMood .authContainer .imgContainer img {
+.mainContainer.darkMood .authContainer .imgContainer canvas {
+  height: 80vh;
   width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  border-radius: 10px;
 }
 .mainContainer.darkMood .authContainer .formConatiner {
   display: flex;
@@ -302,7 +306,7 @@
   outline: none;
   padding: 7px;
   color: rgb(104, 104, 104);
-  background-color: black;
+  background-color: #1f1f14;
 }
 .mainContainer.darkMood .authContainer .formConatiner .inputField .withEyeSlash {
   position: relative;

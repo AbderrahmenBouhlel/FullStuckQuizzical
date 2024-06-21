@@ -250,16 +250,18 @@
             }
            
             .question{
-              
                 color: rgb(133, 206, 169);
+                text-shadow: 0 0 15px rgba(255,255,255,.5);
             }
             .answers{
         
                 .answer{
                     border: 1px solid rgb(133, 206, 169);
                     color: rgb(133, 206, 169);
+                    text-shadow: 0 0 15px rgba(255,255,255,.5);
                     &.selected{
                         background-color: rgb(133, 206, 169);
+                        color: black;
                     }
                 }
 

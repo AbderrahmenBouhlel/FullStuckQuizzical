@@ -145,8 +145,9 @@
   color: rgb(133, 206, 169);
 }
 .answerContainer.darkMood .quizzes-section .quizzCheck .answers .answer.selecedAnswer {
-  background-color: rgba(248, 188, 188, 0.8);
+  background-color: rgba(243, 79, 79, 0.8);
   border-color: transparent;
+  color: white;
 }
 .answerContainer.darkMood .quizzes-section .quizzCheck .answers .answer.correctAnswer {
   color: rgb(41, 50, 100);

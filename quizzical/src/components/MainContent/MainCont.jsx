@@ -14,18 +14,26 @@ export default function MainContent(props) {
   const handleLogin = () => {
     navigate('/login');
   };
+  const handleSignUp = () =>{
+    navigate('/signup')
+  }
  
   return (
     <nav className="nav">
       <Logo/>
       <div className="nav_links">
-        
-        <div className="iconCont loginCont" onClick={handleLogin}>
+        {location.pathname == "/signup" ? 
+          <div className="iconCont loginCont" onClick={handleLogin}>
           <CiLogin className="icon" />
-        </div>
-        <div className="iconCont signupCont">
-          <FaUserLock className="icon" />
-        </div>
+          </div>
+          :
+          <div className="iconCont signupCont" onClick={handleSignUp}>
+            <FaUserLock className="icon" />
+          </div>
+
+        }
+       
+        
         
       </div>
     </nav>

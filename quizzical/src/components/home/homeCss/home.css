@@ -42,6 +42,7 @@
   text-decoration: none;
   color: rgb(140, 212, 253);
   font-size: 1.2rem;
+  cursor: pointer;
 }
 .homePage .HomeNav .options .option a:hover {
   text-shadow: rgb(161, 182, 202) 1px 0 8px;

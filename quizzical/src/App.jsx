@@ -215,7 +215,6 @@ export default function App() {
     }
     
     else if (user !== null && location.pathname==="/signup"){
-
       navigate('/')
     }
   },[user,location.pathname]);
@@ -282,7 +281,11 @@ export default function App() {
                         handleLogout={handleLogout}/>
                       }
           />
-          <Route path='/home' element={<Home />}/>
+          <Route 
+              path='/home' 
+              element={
+                        <Home user={user} />
+                      }/>
 
           <Route path='/answer' element={<Answer calcul_corect_answer={calcul_corect_answer} 
                                             setState={setState}  

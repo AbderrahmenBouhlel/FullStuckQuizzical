@@ -46,7 +46,7 @@ export default function Answer(props){
             {showContainer ?  
                 <div className="answerContainer">
                     <img src={Blob2R} alt="" className="blob right" />
-                    {props.darkMood ? null : <img src={Blob2L} alt="" className="blob left" />  }
+                    {props.darkMood ? <img src={Blob2R} alt="" className="blob leftYello" /> : <img src={Blob2L} alt="" className="blob left" />  }
                     
                     <div className="logoContainer">
                         <Logo/>

@@ -32,5 +32,5 @@ async function getConnection() {
 
 
 
-module.exports = { getConnection, getUsers };
+module.exports = { getConnection };
 

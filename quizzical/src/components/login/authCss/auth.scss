@@ -277,25 +277,29 @@
 
 // darkMood style
 .mainContainer.darkMood{
+    max-height: 100vh;
     .authContainer{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         border-radius: 10px;
-        min-height: 100vh;
-        min-width: 100vw;
+        max-height: 100vh;
+        max-width: 100vw;
         background-color: transparent;
         background-color: white;
         padding-right: 10%;
+        align-items: center;
         .imgContainer{
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 1.2rem;
             border-radius: 10px;
-            img{
+            box-sizing: border-box;
+           
+            canvas{
+                height: 80vh;
                 width: 100%;
-                height: 100%;
-                object-fit:fill;
+                border-radius: 10px;
             }
         }
         .formConatiner{
@@ -347,7 +351,7 @@
                     outline: none;
                     padding: 7px;
                     color: rgb(104, 104, 104);
-                    background-color: black;
+                    background-color: #1f1f14;
                 }
                 & .withEyeSlash{
                     position: relative;

@@ -55,6 +55,7 @@
                     &.selecedAnswer{
                         background-color: rgba(248, 188, 188, .8);
                         border-color: transparent;
+                       
                     }
                     &.correctAnswer{
                         color: rgba(41, 50, 100, 1);
@@ -164,6 +165,7 @@
                     .answer{
                         font-size: .7rem;
                     }
+                   
     
                 }
                 hr{
@@ -212,8 +214,9 @@
                     border: 1px solid  rgb(133, 206, 169);
                     color: rgb(133, 206, 169);
                     &.selecedAnswer{
-                        background-color: rgba(248, 188, 188, .8);
+                        background-color: rgba(243, 79, 79, 0.8);
                         border-color: transparent;
+                        color: white;
                     }
                     &.correctAnswer{
                         color: rgba(41, 50, 100, 1);

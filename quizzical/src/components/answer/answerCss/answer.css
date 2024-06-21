@@ -210,13 +210,16 @@
 }
 .answerContainer.darkMood .quizzes-section .quizz .question {
   color: rgb(133, 206, 169);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 .answerContainer.darkMood .quizzes-section .quizz .answers .answer {
   border: 1px solid rgb(133, 206, 169);
   color: rgb(133, 206, 169);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 .answerContainer.darkMood .quizzes-section .quizz .answers .answer.selected {
   background-color: rgb(133, 206, 169);
+  color: black;
 }
 .answerContainer.darkMood .quizzes-section .checkBtn {
   background-color: rgb(133, 206, 169);
